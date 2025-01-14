@@ -1,4 +1,4 @@
-import 'package:cpgroup_hackathon_chatbot/screens/home.dart';
+import 'package:cpgroup_hackathon_chatbot/screens/chatPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -16,9 +16,9 @@ class _splashState extends State<splash> with SingleTickerProviderStateMixin{
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    // Future.delayed(const Duration(seconds: 2), () {
-    //   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => home()));
-    // });
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const chatPage()));
+    });
   }
 
   @override
