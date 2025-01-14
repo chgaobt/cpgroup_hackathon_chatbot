@@ -48,7 +48,7 @@ class _splashState extends State<splash> with SingleTickerProviderStateMixin{
                   SizedBox(height: 450),
                   Center(
                     child: Text(
-                      'ChatBot',
+                      'InnoGrow',
                       style: TextStyle(
                         fontStyle: FontStyle.italic,
                         color: Colors.black,
